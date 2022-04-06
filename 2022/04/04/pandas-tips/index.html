@@ -6,15 +6,15 @@
   
   <title>Pandas Tips | Burned Out</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Ignore missing columns in usecol parameter123456subset &#x3D; [&amp;#x27;a&amp;#x27;, &amp;#x27;c&amp;#x27;, &amp;#x27;d&amp;#x27;]df &#x3D; pd.read_csv(&amp;#x27;sample.csv&amp;#x27;, usecols&#x3D;lambda x: x in subset)   a  c0  1  31  4  6  More">
+  <meta name="description" content="ReadIgnore missing columns in usecol parameter123456subset &#x3D; [&amp;#x27;a&amp;#x27;, &amp;#x27;c&amp;#x27;, &amp;#x27;d&amp;#x27;]df &#x3D; pd.read_csv(&amp;#x27;sample.csv&amp;#x27;, usecols&#x3D;lambda x: x in subset)   a  c0  1  31  4  6">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Pandas Tips">
 <meta property="og:url" content="https://xion6.github.io/note/2022/04/04/pandas-tips/index.html">
 <meta property="og:site_name" content="Burned Out">
-<meta property="og:description" content="Ignore missing columns in usecol parameter123456subset &#x3D; [&amp;#x27;a&amp;#x27;, &amp;#x27;c&amp;#x27;, &amp;#x27;d&amp;#x27;]df &#x3D; pd.read_csv(&amp;#x27;sample.csv&amp;#x27;, usecols&#x3D;lambda x: x in subset)   a  c0  1  31  4  6  More">
+<meta property="og:description" content="ReadIgnore missing columns in usecol parameter123456subset &#x3D; [&amp;#x27;a&amp;#x27;, &amp;#x27;c&amp;#x27;, &amp;#x27;d&amp;#x27;]df &#x3D; pd.read_csv(&amp;#x27;sample.csv&amp;#x27;, usecols&#x3D;lambda x: x in subset)   a  c0  1  31  4  6">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-04-04T10:18:13.000Z">
-<meta property="article:modified_time" content="2022-04-04T10:22:12.244Z">
+<meta property="article:modified_time" content="2022-04-06T06:20:40.224Z">
 <meta property="article:author" content="Ren Kure">
 <meta property="article:tag" content="python">
 <meta property="article:tag" content="pandas">
@@ -97,14 +97,14 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="Ignore-missing-columns-in-usecol-parameter"><a href="#Ignore-missing-columns-in-usecol-parameter" class="headerlink" title="Ignore missing columns in usecol parameter"></a>Ignore missing columns in usecol parameter</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">subset = [<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;c&#x27;</span>, <span class="string">&#x27;d&#x27;</span>]</span><br><span class="line">df = pd.read_csv(<span class="string">&#x27;sample.csv&#x27;</span>, usecols=<span class="keyword">lambda</span> x: x <span class="keyword">in</span> subset)</span><br><span class="line"></span><br><span class="line">   a  c</span><br><span class="line"><span class="number">0</span>  <span class="number">1</span>  <span class="number">3</span></span><br><span class="line"><span class="number">1</span>  <span class="number">4</span>  <span class="number">6</span></span><br></pre></td></tr></table></figure>
+        <h2 id="Read"><a href="#Read" class="headerlink" title="Read"></a>Read</h2><h3 id="Ignore-missing-columns-in-usecol-parameter"><a href="#Ignore-missing-columns-in-usecol-parameter" class="headerlink" title="Ignore missing columns in usecol parameter"></a>Ignore missing columns in usecol parameter</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">subset = [<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;c&#x27;</span>, <span class="string">&#x27;d&#x27;</span>]</span><br><span class="line">df = pd.read_csv(<span class="string">&#x27;sample.csv&#x27;</span>, usecols=<span class="keyword">lambda</span> x: x <span class="keyword">in</span> subset)</span><br><span class="line"></span><br><span class="line">   a  c</span><br><span class="line"><span class="number">0</span>  <span class="number">1</span>  <span class="number">3</span></span><br><span class="line"><span class="number">1</span>  <span class="number">4</span>  <span class="number">6</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://stackoverflow.com/a/63002444">Stack overflow</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xion6.github.io/note/2022/04/04/pandas-tips/" data-id="cl1kkens60001l2sj6dhfc5lj" data-title="Pandas Tips" class="article-share-link">Share</a>
+      <a data-url="https://xion6.github.io/note/2022/04/04/pandas-tips/" data-id="cl1n6rw4o0001nnsj7ump7uqb" data-title="Pandas Tips" class="article-share-link">Share</a>
       
       
       
@@ -115,6 +115,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/note/2022/04/06/python-tips/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Python Tips
+        
+      </div>
+    </a>
   
   
     <a href="/note/2022/04/03/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
@@ -149,7 +158,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/note/tags/pandas/" style="font-size: 10px;">pandas</a> <a href="/note/tags/python/" style="font-size: 10px;">python</a>
+      <a href="/note/tags/pandas/" style="font-size: 10px;">pandas</a> <a href="/note/tags/python/" style="font-size: 20px;">python</a>
     </div>
   </div>
 
@@ -169,6 +178,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/note/2022/04/06/python-tips/">Python Tips</a>
+          </li>
         
           <li>
             <a href="/note/2022/04/04/pandas-tips/">Pandas Tips</a>
