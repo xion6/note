@@ -100,7 +100,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xion6.github.io/note/2022/04/10/gadget/" data-id="cl1vjg1lx00045wsjd1686e13" data-title="Gadget" class="article-share-link">Share</a>
+      <a data-url="https://xion6.github.io/note/2022/04/10/gadget/" data-id="cl1vjhyd800007nsj5c2ihtq3" data-title="Gadget" class="article-share-link">Share</a>
       
       
       
@@ -141,11 +141,11 @@
 <h3 id="Time-processing"><a href="#Time-processing" class="headerlink" title="Time processing"></a>Time processing</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line">start_time = time.time()</span><br><span class="line"></span><br><span class="line"><span class="comment"># some process...</span></span><br><span class="line"></span><br><span class="line">delta = time.time() - start_time</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&#x27;Finished in <span class="subst">&#123;delta:<span class="number">.3</span>&#125;</span> seconds&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p>As decorator</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">clac_exe_time</span>(<span class="params">f</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">wrapper</span>():</span><br><span class="line">        start_time = time.time()</span><br><span class="line">        v = f()</span><br><span class="line">        delta = time.time() - start_time</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&#x27;Finished in <span class="subst">&#123;delta:<span class="number">.3</span>&#125;</span> seconds&#x27;</span>)</span><br><span class="line">        <span class="keyword">return</span> v</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> wrapper</span><br><span class="line"></span><br><span class="line"><span class="meta">@clac_exe_time</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">foo</span>():</span><br><span class="line">    <span class="comment"># some process...</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">calc_exe_time</span>(<span class="params">f</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">wrapper</span>():</span><br><span class="line">        start_time = time.time()</span><br><span class="line">        v = f()</span><br><span class="line">        delta = time.time() - start_time</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&#x27;Finished in <span class="subst">&#123;delta:<span class="number">.3</span>&#125;</span> seconds&#x27;</span>)</span><br><span class="line">        <span class="keyword">return</span> v</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> wrapper</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@calc_exe_time</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">foo</span>():</span><br><span class="line">    <span class="comment"># some process...</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xion6.github.io/note/2022/04/06/python-tips/" data-id="cl1vjg1lu00025wsjho2efdoy" data-title="Python Tips" class="article-share-link">Share</a>
+      <a data-url="https://xion6.github.io/note/2022/04/06/python-tips/" data-id="cl1vjhydn00047nsj68wt639v" data-title="Python Tips" class="article-share-link">Share</a>
       
       
       
@@ -188,7 +188,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xion6.github.io/note/2022/04/04/pandas-tips/" data-id="cl1vjg1lr00015wsjb3slgcci" data-title="Pandas Tips" class="article-share-link">Share</a>
+      <a data-url="https://xion6.github.io/note/2022/04/04/pandas-tips/" data-id="cl1vjhydl00037nsj71pp7kiv" data-title="Pandas Tips" class="article-share-link">Share</a>
       
       
       
@@ -244,7 +244,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xion6.github.io/note/2022/04/03/hello-world/" data-id="cl1vjg1lk00005wsj5ym36ard" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="https://xion6.github.io/note/2022/04/03/hello-world/" data-id="cl1vjhyde00017nsjeh0c55n1" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
